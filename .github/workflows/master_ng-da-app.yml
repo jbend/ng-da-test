@@ -51,6 +51,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'ng-da-app'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A911E2A798C34587AD79107040A41F67 }}
-          package: .
+          package: ./dist/ng-da-1
